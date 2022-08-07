@@ -1,4 +1,4 @@
-# Turkish-politician-analysis
+# Turkish-twitter-politician-analysis
 In this project, I have written a machine learning model that determines whether the tweets about politicians are positive or negative.
 Then, I used the model to predict which politicians are liked more by Turkish people. There are some interesting data, so I recommend you to at least check out the graphs.
 You can reach out the dataset I have used [here](https://huggingface.co/datasets/winvoker/turkish-sentiment-analysis-dataset). I have filtered some to use in this project.
