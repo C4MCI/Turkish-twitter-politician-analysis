@@ -71,7 +71,7 @@ xgb = XGBClassifier()
 xgb.fit(X_train, y_train_xgb)
 ```
 
-![alt text](https://imgur.com/HkWLx0Y)
+![alt text](https://i.imgur.com/HkWLx0Y.png)
 
 It seems like Logistic regression is working best with our data with a 92.5% accuracy score. I will admit that 92.5% accuracy is not great, but given our dataset is very limited, I will just call it acceptable.
 Since we will be using the Logistic Regression model in our analysis, let's save it so we don't have to process all this data again.
