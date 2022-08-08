@@ -85,7 +85,38 @@ Now that we have a model that can accurately predict whether a tweet is negative
 I will be comparing two Turkish politicians. Kemal Kılıçdaroğlu and Mansur Yavaş.
 For those who don't know who are these people, they are two of the most possible president candidates from the opposition party.
 
-## Kemal Kılıçdaroğlu
+### Kemal Kılıçdaroğlu
+I have fetched some tweets about Kemal Kılıçdaroğlu. Let's throw them on our model and see what it looks like.
+
+```python
+    predicted = model.predict(text_matrix)
+    freq = nltk.FreqDist(predicted)
+    df = pd.DataFrame(freq.items(), columns=["Label", "Frequency"])
+    plt.style.use('ggplot')
+    plt.pie(df["Frequency"], labels=df["Label"], autopct='%1.1f%%', shadow=True, colors=["lime", "thistle", "tomato"])
+    plt.title("Public Opinion About Kemal Kılıçdaroğlu")
+    plt.show()
+```
+
+![alt text](https://i.imgur.com/0VE5Sbc.png)
+
+### Mansur Yavaş
+I have just used the same code above.
+
+![alt text](https://i.imgur.com/gVpmXK7.png)
+
+## Distributing Neutrals
+In an election situation, you have to vote for one of them. That's why I wanted to see what would happen if there were no neutral opinions.
+
+### Kemal Kılıçdaroğlu
+
+![alt text](https://i.imgur.com/YqRBLRD.png)
+
+### Mansur Yavaş
+
+![alt text](https://i.imgur.com/c0HjZwZ.png)
 
 
-
+# Last Words
+Based on our machine learning model, it seems like Mansur Yavaş is more liked by the Turkish Twitter Community. But that does not mean that Kemal Kılıçdaroğlu is disliked. They both have mostly positive results as you can see in the graphs above.
+Hope you enjoyed reading this. There are some interesting and some expected results in this analysis. You can always try improving the model and contact me. I would be happy to talk with you.
