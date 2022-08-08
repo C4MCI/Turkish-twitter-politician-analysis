@@ -80,6 +80,12 @@ Since we will be using the Logistic Regression model in our analysis, let's save
 pickle.dump(lr, open(lr_model_filename, "wb"))
 ```
 
+# Analysis About Turkish Politicians
+Now that we have a model that can accurately predict whether a tweet is negative or positive, we can fetch some tweets about politicians and use our model to find out public opinion about that politician.
+I will be comparing two Turkish politicians. Kemal Kılıçdaroğlu and Mansur Yavaş.
+For those who don't know who are these people, they are two of the most possible president candidates from the opposition party.
+
+## Kemal Kılıçdaroğlu
 
 
 
